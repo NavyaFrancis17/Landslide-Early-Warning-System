@@ -1,0 +1,43 @@
+# Virtual Environment
+.venv/
+env/
+venv/
+
+# Python Cache & Artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Notebooks & IDEs
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# Environment Variables
+.env
+.env.local
+
+# Local Execution Helpers
+powershell.cmd
+
+# Node / Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+
+# Temporary / Scratch Files
+scratch/
+scratch_*.py
+
+# Large raw environmental API cache (keep folder via .gitkeep)
+data/environmental/raw/*
+!data/environmental/raw/.gitkeep

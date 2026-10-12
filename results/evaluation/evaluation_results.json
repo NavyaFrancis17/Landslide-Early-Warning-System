@@ -1,0 +1,54 @@
+{
+  "metrics": {
+    "total_actual_events_evaluated": 11033,
+    "detected_landslide_events": 1116,
+    "missed_landslide_events": 9917,
+    "total_actionable_warnings_evaluated": 6660,
+    "matched_warning_events": 1116,
+    "false_warning_events": 5544,
+    "event_detection_rate": 0.1012,
+    "warning_precision": 0.1676,
+    "miss_rate": 0.8988,
+    "event_f1_score": 0.1262
+  },
+  "lead_time_statistics": {
+    "matched_events_count": 1116,
+    "min_lead_time_hours": 0.05,
+    "max_lead_time_hours": 168.0,
+    "mean_lead_time_hours": 54.59,
+    "median_lead_time_hours": 33.0,
+    "std_lead_time_hours": 50.24,
+    "p25_lead_time_hours": 15.0,
+    "p75_lead_time_hours": 93.9,
+    "bucket_counts": {
+      "less_than_1h": 51,
+      "hours_1_to_6": 111,
+      "hours_6_to_12": 92,
+      "hours_12_to_24": 245,
+      "days_1_to_3": 289,
+      "days_3_to_7": 328
+    }
+  },
+  "false_alarm_analysis": {
+    "total_false_warning_events": 5544,
+    "total_actionable_warnings_evaluated": 6660,
+    "false_alarm_rate": 0.8324,
+    "false_alarm_reasons_breakdown": {
+      "NO_PREDICTED_LANDSLIDE_EVENT_MATCHED": 5544
+    }
+  },
+  "missed_event_analysis": {
+    "total_missed_landslide_events": 9917,
+    "total_evaluable_actual_events": 11033,
+    "miss_rate": 0.8988,
+    "miss_reasons_breakdown": {
+      "NO_MATCHED_ACTIONABLE_PRE_EVENT_WARNING": 9917
+    }
+  },
+  "leakage_checks": {
+    "warning_precedes_event_timestamp": true,
+    "no_post_event_warning_classified_as_detection": true,
+    "spatial_distance_within_threshold": true,
+    "one_to_one_matching_policy_enforced": true
+  }
+}

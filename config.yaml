@@ -1,0 +1,32 @@
+project:
+  name: "AI-Based Location-Adaptive Landslide Early-Warning System"
+  version: "0.3.0"
+  phase: 3
+
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  environmental_raw: "data/environmental/raw"
+  environmental_processed: "data/environmental/processed"
+  environmental_metadata: "data/environmental/metadata"
+  sample_data: "data/sample"
+  saved_models: "models/saved"
+  docs: "docs"
+  figures: "docs/figures"
+  figures_phase3: "docs/figures/phase3"
+
+files:
+  raw_csv: "data/raw/Global_Landslide_Catalog_Export.csv"
+  processed_clean_csv: "data/processed/landslide_events_clean.csv"
+  processed_temporal_csv: "data/processed/landslide_events_temporal.csv"
+  event_environment_features_csv: "data/processed/event_environment_features.csv"
+
+spatial_matching:
+  max_distance_km: 50.0
+
+temporal_alignment:
+  history_window_days: 7
+  prediction_cutoff_hours: 0
+
+logging:
+  level: "INFO"

@@ -1,0 +1,55 @@
+# What-If Environmental Scenario Simulation Configuration
+
+simulation:
+  enabled_features:
+    rainfall: true
+    soil_moisture: true
+
+  rainfall:
+    scenarios:
+      - name: baseline
+        multiplier: 1.0
+      - name: rainfall_plus_10
+        multiplier: 1.10
+      - name: rainfall_plus_25
+        multiplier: 1.25
+      - name: rainfall_plus_50
+        multiplier: 1.50
+      - name: rainfall_plus_100
+        multiplier: 2.00
+      - name: rainfall_minus_10
+        multiplier: 0.90
+      - name: rainfall_minus_25
+        multiplier: 0.75
+
+  soil_moisture:
+    scenarios:
+      - name: baseline
+        multiplier: 1.0
+      - name: moisture_plus_10
+        multiplier: 1.10
+      - name: moisture_plus_25
+        multiplier: 1.25
+      - name: moisture_plus_50
+        multiplier: 1.50
+      - name: moisture_minus_10
+        multiplier: 0.90
+
+  combined:
+    scenarios:
+      - name: moderate_increase
+        rainfall_multiplier: 1.25
+        moisture_multiplier: 1.10
+      - name: severe_increase
+        rainfall_multiplier: 1.50
+        moisture_multiplier: 1.25
+      - name: extreme_event
+        rainfall_multiplier: 2.00
+        moisture_multiplier: 1.50
+
+  sensitivity:
+    parameter_grid_percent: [-25, -10, 0, 10, 25, 50, 75, 100]
+
+  sampling:
+    max_locations: 20
+    observations_per_location: 5

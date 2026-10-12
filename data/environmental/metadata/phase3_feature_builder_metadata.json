@@ -1,0 +1,8 @@
+{
+  "total_events": 11033,
+  "successfully_matched_events": 5221,
+  "missing_environmental_events": 5812,
+  "excessive_distance_flagged": 0,
+  "max_spatial_distance_allowed_km": 50.0,
+  "total_features_generated": 41
+}

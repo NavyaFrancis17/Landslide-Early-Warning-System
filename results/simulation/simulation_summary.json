@@ -1,0 +1,14 @@
+{
+  "total_simulations_evaluated": 1400,
+  "mean_risk_probability_change": -0.0113,
+  "median_risk_probability_change": 0.0,
+  "max_risk_increase": 0.0029,
+  "min_risk_change": -0.9933,
+  "total_warning_state_transitions": 10,
+  "transition_breakdown": {
+    "HIGH_RISK_TO_WARNING": 10
+  },
+  "in_domain_scenarios_count": 1390,
+  "extrapolation_scenarios_count": 10,
+  "extrapolation_percentage": 0.71
+}

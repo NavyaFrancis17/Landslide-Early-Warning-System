@@ -1,0 +1,17 @@
+parameter,change_percent,multiplier,risk_probability,warning_state,is_extrapolation
+rainfall,-25.0,0.75,1.0,HIGH_RISK,False
+rainfall,-10.0,0.9,1.0,HIGH_RISK,False
+rainfall,0.0,1.0,1.0,HIGH_RISK,False
+rainfall,10.0,1.1,1.0,HIGH_RISK,False
+rainfall,25.0,1.25,1.0,HIGH_RISK,False
+rainfall,50.0,1.5,1.0,HIGH_RISK,False
+rainfall,75.0,1.75,1.0,HIGH_RISK,False
+rainfall,100.0,2.0,1.0,HIGH_RISK,False
+soil_moisture,-25.0,0.75,1.0,HIGH_RISK,False
+soil_moisture,-10.0,0.9,1.0,HIGH_RISK,False
+soil_moisture,0.0,1.0,1.0,HIGH_RISK,False
+soil_moisture,10.0,1.1,1.0,HIGH_RISK,False
+soil_moisture,25.0,1.25,0.9999,HIGH_RISK,False
+soil_moisture,50.0,1.5,0.9999,HIGH_RISK,False
+soil_moisture,75.0,1.75,0.9999,HIGH_RISK,False
+soil_moisture,100.0,2.0,0.9999,HIGH_RISK,True

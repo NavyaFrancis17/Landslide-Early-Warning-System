@@ -1,0 +1,15 @@
+metric,value,unit,definition
+total_actual_events_evaluated,11033.0,count,Total actual catalog landslide events evaluated
+detected_landslide_events,1116.0,count,Actual landslides successfully preceded by matched warning
+missed_landslide_events,9917.0,count,Actual landslides without preceding actionable warning match
+total_actionable_warnings_evaluated,6660.0,count,Total actionable warning events (WARNING/HIGH_RISK)
+matched_warning_events,1116.0,count,Actionable warnings matched to actual landslide event
+false_warning_events,5544.0,count,Actionable warnings without matched landslide event
+event_detection_rate,0.1012,ratio,Detected Landslides / Total Actual Events
+warning_precision,0.1676,ratio,Matched Warnings / Total Actionable Warnings
+miss_rate,0.8988,ratio,Missed Landslides / Total Actual Events
+event_f1_score,0.1262,ratio,Harmonic mean of Warning Precision and Detection Rate
+min_lead_time_hours,0.05,hours,Minimum pre-event lead time
+max_lead_time_hours,168.0,hours,Maximum pre-event lead time
+mean_lead_time_hours,54.59,hours,Mean pre-event lead time
+median_lead_time_hours,33.0,hours,Median pre-event lead time

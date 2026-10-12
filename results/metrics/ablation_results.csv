@@ -1,0 +1,5 @@
+Experiment,Feature_Count,Accuracy,Precision,Recall,F1,ROC_AUC,PR_AUC,Balanced_Accuracy,Brier_Score
+Exp_A_Rainfall_Only,8,0.9324,0.9209,0.9461,0.9333,0.9891,0.9892,0.9324,0.0427
+Exp_B_Rainfall_SoilMoisture,15,0.9942,0.9943,0.994,0.9942,0.9998,0.9998,0.9942,0.0056
+Exp_C_Rainfall_SoilMoisture_Temporal,17,0.994,0.994,0.994,0.994,0.9993,0.9993,0.994,0.0058
+Exp_D_All_Environmental_Spatial,22,0.9944,0.9943,0.9946,0.9944,0.9998,0.9998,0.9944,0.0055

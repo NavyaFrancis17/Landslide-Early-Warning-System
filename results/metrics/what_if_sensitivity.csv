@@ -1,0 +1,7 @@
+Scenario,Precipitation_Multiplier,Soil_Moisture_Multiplier,Mean_Predicted_Probability,Median_Predicted_Probability,Mean_Probability_Delta
+Base (Observed),1.0,1.0,0.5,0.5154,0.0
+Precipitation +25%,1.25,1.0,0.5004,0.6794,0.0005
+Precipitation +50%,1.5,1.0,0.5009,0.8008,0.0009
+Precipitation -25%,0.75,1.0,0.4992,0.1423,-0.0007
+Soil Moisture +25%,1.0,1.25,0.4686,0.013,-0.0314
+Soil Moisture -25%,1.0,0.75,0.3768,0.0023,-0.1232

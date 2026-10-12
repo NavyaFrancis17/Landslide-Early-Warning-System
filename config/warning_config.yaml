@@ -1,0 +1,33 @@
+# Early-Warning Engine Threshold & Persistence Configuration
+
+risk_states:
+  NORMAL:
+    min_probability: 0.00
+    max_probability: 0.35
+  WATCH:
+    min_probability: 0.35
+    max_probability: 0.60
+  WARNING:
+    min_probability: 0.60
+    max_probability: 0.80
+  HIGH_RISK:
+    min_probability: 0.80
+    max_probability: 1.00
+
+persistence:
+  minimum_warning_persistence_observations: 2
+  minimum_high_risk_persistence_observations: 3
+  deescalation_consecutive_low_observations: 2
+
+trend:
+  trend_window_size: 3
+  increasing_delta_threshold: 0.05
+  decreasing_delta_threshold: -0.05
+
+abnormality:
+  abnormal_z_threshold: 1.5
+  strongly_abnormal_z_threshold: 2.5
+
+hysteresis:
+  escalation_margin: 0.02
+  deescalation_margin: 0.03

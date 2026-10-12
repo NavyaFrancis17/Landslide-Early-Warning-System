@@ -1,0 +1,5 @@
+check_name,status
+warning_precedes_event_timestamp,PASS
+no_post_event_warning_classified_as_detection,PASS
+spatial_distance_within_threshold,PASS
+one_to_one_matching_policy_enforced,PASS

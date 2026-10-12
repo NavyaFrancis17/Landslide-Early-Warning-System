@@ -1,0 +1,30 @@
+# Event & Lead-Time Evaluation Configuration
+
+evaluation:
+  actionable_warning_states:
+    - WARNING
+    - HIGH_RISK
+
+  advisory_warning_states:
+    - WATCH
+
+  spatial:
+    max_distance_km: 50.0
+
+  temporal:
+    pre_event_window_hours: 168.0  # Maximum lookback window before event (7 days)
+    post_warning_matching_hours: 168.0
+
+  matching:
+    one_warning_per_event: true
+    one_event_per_warning: true
+    prefer_highest_warning_state: true
+    prefer_shortest_distance: true
+
+  lead_time_buckets:
+    less_than_1h: [0.0, 1.0]
+    hours_1_to_6: [1.0, 6.0]
+    hours_6_to_12: [6.0, 12.0]
+    hours_12_to_24: [12.0, 24.0]
+    days_1_to_3: [24.0, 72.0]
+    days_3_to_7: [72.0, 168.0]
